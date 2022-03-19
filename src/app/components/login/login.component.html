@@ -1,0 +1,29 @@
+<div class="main-container">
+<div class="container">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+      <div id="logo-container">
+        <h2>Login</h2>
+      </div>
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <form  [formGroup]="loginModel.login">
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input class="form-control" formControlName="username" type="text"  name='username' placeholder="username"/>
+          </div>
+           <div class="form-group">
+            <label for="exampleInputEmail1">Password</label>
+            <input class="form-control" formControlName="password" type="password" name='password' placeholder="password"/>
+          </div>
+
+          <div class="form-group mt-1">
+            <button type="button" (click)="login()" style="float: right;" class="btn btn-primary">Login</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
